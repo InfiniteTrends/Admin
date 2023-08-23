@@ -1,0 +1,69 @@
+.login-comp{
+  width: 100%;
+  height: 100vh; 
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background-color: ghostwhite;
+  margin: 0 0 !important;
+  z-index: 1000;
+}
+
+.login-comp form{
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 370px;
+  background-color: white;
+  padding: 3rem 1.5rem 1rem;
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.form label,
+.form input {
+  margin: 5px 8px;
+}
+
+.form input {
+  padding: 8px 14px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.form input[type="submit"] {
+  margin: 3rem auto 0;
+  padding: 10px 16px;
+  width: 50%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+ 
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

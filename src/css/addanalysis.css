@@ -1,0 +1,203 @@
+.analyst-post{
+  width: 60%;
+  margin: 5rem auto 2rem;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.analyst-post form{
+  background-color: #fbfbff;
+  display: flex;
+  flex-direction: column; 
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: max-content;
+  margin: 1rem auto; 
+}
+
+.drop-zone{
+  padding: 1.5rem 2rem;
+  margin:1rem auto ;
+  height: 100%;
+  min-height: 200px;
+  width: 50%;
+  border: 1px #333 dashed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.drop-zone div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  transition: all 500ms ease-out;
+  width: 50%;
+}
+
+/* .drop-zone div:hover{
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.098),
+  inset -4px -4px 6px 0 rgba(250, 250, 250, 0.354);
+  border: #fbfbff 1px dotted;
+} */
+
+.drop-zone div label{
+  cursor: pointer;
+  position: absolute;
+  margin: auto;
+}
+
+.drop-zone div label svg{
+  font-size: 3.5rem;
+  color: rgb(206, 206, 206);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.drop-zone div input {
+  margin: auto; 
+  padding: 1.5rem;
+}
+
+.drop-zone aside button{
+  display: block;
+  margin: 5px auto;
+  /* background: ; */
+}
+
+.analyst-post .form-input select{
+  width: 50%;
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.098),
+  inset -4px -4px 6px 0 rgba(250, 250, 250, 0.354);
+  outline: none;
+  background-color: #fbfbff;
+  padding: 14px 16px ;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.analyst-post .form-input select option{
+  cursor: pointer;
+}
+
+input, textarea, select{
+  border: none !important;
+}
+
+.analyst-post .form-input,
+.analyst-post .txt-area {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.analyst-post .form-input label,
+.analyst-post .txt-area label {
+  text-align: left !important;
+  font-size: 1.2rem !important;
+}
+ 
+ 
+
+.analyst-post .form-input input{
+  width: 50%;
+  padding: 10px 16px;
+  margin: .8rem 1rem;
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.098),
+  inset -4px -4px 6px 0 rgba(250, 250, 250, 0.354) !important;
+  outline: none !important;
+  background-color: #fbfbff;
+  border-radius: 5px;
+}
+
+.analyst-post .form-input input[type="submit"]{
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #fbfbff !important; 
+  font-size: 1.2rem !important;
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.122),
+  -4px -4px 10px 0 rgba(255, 255, 255, 0.281) !important;
+  transition: all 500ms ease-out !important;
+}
+
+.analyst-post .form-input input[type="submit"]:focus{
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.098),
+  inset -4px -4px 6px 0 rgba(250, 250, 250, 0.354) !important;
+}
+
+.analyst-post .txt-area { 
+
+}
+
+
+.analyst-post .txt-area textarea { 
+  padding: 14px 16px;
+  width: 50%;
+  box-shadow: inset 3px 3px 7px 0 rgba(0, 0, 0, 0.098),
+  inset -4px -4px 6px 0 rgba(255, 255, 255, 0.354) !important;
+  outline: none !important;
+  background-color: #fbfbff;
+  border-radius: 6px !important;
+  
+
+}
+
+/*  Sent   */
+
+.sent{
+  position: fixed;
+  top: 6rem;
+  background-color: #30f57c;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  color: #fbfbff;
+  padding: 12px 14px;
+  margin: auto;
+  transition: all 900ms ease-in-out 500ms;
+  z-index: 101;
+}
+
+
+.sent > span{
+  color: #fbfbff;
+  font-size: 1.4rem;
+}
+
+.sent > svg{
+  color: #fbfbff;
+  font-size: 1.4rem;
+  margin: 5px 5px 0;
+  vertical-align: bottom;
+}
+
+.sending{
+  position: fixed;
+  top: 2rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgb(248, 248, 108);
+  width: fit-content;
+  padding: .6rem .8rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  transition: all 900ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 500ms;
+  margin: auto;
+  z-index: 101;
+}
+
+
+
+.sending > span{
+  color: #fbfbff;
+  font-size: 1.4rem;
+}
+
+.sending > svg{
+  color: #fbfbff;
+  font-size: 1.4rem;
+  margin: 5px 5px 0;
+  vertical-align: bottom;
+}

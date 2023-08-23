@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tangsa:wght@500&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed !important;
+  top: 0 !important;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  z-index: 10;
+  background-color: #333;
+  color: #fff !important;
+}
+
+
+.navbar div {
+  /* padding: 14px 16px; */
+  text-align: center;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.navbar div img{
+  width: 50px;
+  display: block;
+}
+
+
+.navbar span {
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.navbar span svg {
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  position: fixed ;
+  top: 0;
+  bottom: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  z-index: 3;
+  transition: all 500ms ease-in-out;
+  z-index: 12;
+  background-color: #333;
+  color: #fff !important;
+}
+
+.sidebar.open {
+  left: 0;
+  transition: 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.sidebar>div {
+  display: flex;
+  flex-direction: column;
+  padding: .1rem 1rem 0;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  padding: 1.4rem 1rem;
+}
+
+.close>svg {
+  font-size: 2rem;
+  color: #fff !important;
+}
+
+
+.sidebar>ul {
+  position: relative;
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar>ul>li {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+
+.sidebar>ul>li>a {
+  position: relative;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: all 500ms ease-in-out;
+  border-radius: 40px;
+}
+
+
+.sidebar>ul>li>a span {
+  margin: 0 10px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+
+.sidebar>ul>li>a svg {
+  font-size: 2.2rem;
+}
+
+.sidebar>ul>li>a sup {
+  margin: -5px 5px 0;
+}
